@@ -1,0 +1,26 @@
+.Profile {
+  flex-wrap: wrap;
+  display: flex;
+  width: 320px;
+  margin: 10px auto;
+  padding: 5px;
+  border: 11px solid #bd9308;
+  border-radius: 30px;
+}
+
+.Profile img {
+  width: 290px;
+}
+
+.ProfileInfoText {
+  font-style: italic;
+}
+
+.ProfileStatisticList,
+.ProfileInfoList {
+  margin-left: 15px;
+}
+
+.ProfileStatistic {
+  font-weight: 700;
+}

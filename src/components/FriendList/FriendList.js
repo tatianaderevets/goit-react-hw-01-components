@@ -1,8 +1,7 @@
 import React from "react";
 import FriendListItem from "./FriendListItem";
 import PropTypes from 'prop-types';
-import defaultImage from "./default.jpg";
-console.log(defaultImage);
+
 
 const FriendList = ({ friends }) => {
     console.log(friends);
@@ -28,9 +27,6 @@ const FriendList = ({ friends }) => {
 
 
 
-FriendList.defaultProps = {
-  avatar:defaultImage,
-};
 
 FriendList.propTypes = {
     friends: PropTypes.arrayOf(PropTypes.shape({

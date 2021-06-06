@@ -7,6 +7,7 @@ import statisticalData from "./data/statistical-data.json";
 import transactions from "./data/transactions.json";
 
 // Components
+import Container from "./components/Container/Container";
 import FriendList from "./components/FriendList/FriendList";
 import Profile from "./components/Profile/Profile";
 import Statistics from "./components/Statistics/Statistics";
@@ -14,16 +15,19 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 
 function App() {
   return (
-    <div className="App">
+    <Container>
+
       <h1>First homework</h1>
-      <FriendList friends={friends} />
-      <Profile data = {userData || {}} />
+      <Profile data={userData} />
       <Statistics title="Upload stats" stats={statisticalData} />
       <Statistics stats={statisticalData} />
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
       
+    </Container>
       
-    </div>
+      
+    
   );
 }
 

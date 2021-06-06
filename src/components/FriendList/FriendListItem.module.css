@@ -1,0 +1,30 @@
+.FriendListItem {
+  border: 1px solid black;
+  padding: 3px;
+  display: inline-block;
+  width: 60px;
+  border-radius: 8px;
+}
+.FriendListItem + .FriendListItem {
+  margin-left: 10px;
+}
+.Online {
+  border: 1px solid black;
+  padding: 3px;
+  display: inline-block;
+  width: 60px;
+  border-radius: 8px;
+  width: 5px;
+  height: 5px;
+  background-color: green;
+}
+.Offline {
+  border: 1px solid black;
+  padding: 3px;
+  display: inline-block;
+  width: 60px;
+  border-radius: 8px;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+}
